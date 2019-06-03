@@ -17,19 +17,35 @@ export class Publisher extends DomainBaseEntity {
   name: string
 
   @Column('text', {
-    nullable: true
+    nullable: true,
+    comment: 'SQL Query to fetch data'
   })
   rule: string
 
-  @Column('text', {
-    nullable: true
-  })
-  type: string
+  @Column('text')
+  status: string
 
-  @Column('boolean', {
-    default: false
+  @Column('text', {
+    comment: 'Cron expression or period interval'
   })
-  started: boolean
+  interval: string
+
+  @Column('text')
+  endpoint: string
+
+  @Column('text')
+  returnType: string
+
+  @Column('text')
+  dataKey: string
+
+  @Column('text', {
+    comment: 'Array, Key-Value, Key-Object, Single Row, Custom'
+  })
+  keyField: string
+
+  @Column('text')
+  valueField: string
 
   @Column('text', {
     nullable: true

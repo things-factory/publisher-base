@@ -12,3 +12,8 @@ const server = http.createServer(),
 
 bayeux.attach(server)
 server.listen(8000)
+
+const cron = require('node-cron')
+cron.schedule('* * * * * *', () => {
+  // console.log('running a task every second')
+})
