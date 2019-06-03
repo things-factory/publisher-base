@@ -2,12 +2,7 @@ import { MigrationInterface, QueryRunner, getRepository } from 'typeorm'
 import { Domain } from '@things-factory/shell'
 import { Publisher } from '../entities'
 
-const SEED = [
-  {
-    name: 'Seed',
-    description: 'Description for Seed'
-  }
-]
+const SEED = []
 
 export class SeedPublisher1559537433289 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<any> {
