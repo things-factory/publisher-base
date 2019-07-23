@@ -1,0 +1,11 @@
+{
+  "field.rule": "peraturan",
+  "field.status": "status",
+  "field.interval": "selang",
+  "field.endpoint": "titik akhir",
+  "field.return_type": "return type",
+  "field.data_key": "kunci data",
+  "field.key_field": "ruang kunci",
+  "field.value_field": "ruang nilai",
+  "field.datasource": "sumber data"
+}
