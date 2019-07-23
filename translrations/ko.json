@@ -1,0 +1,11 @@
+{
+  "field.rule": "규칙",
+  "field.status": "상태",
+  "field.interval": "간격",
+  "field.endpoint": "종료포인트",
+  "field.return_type": "반환 유형",
+  "field.data_key": "데이터 키",
+  "field.key_field": "키 필드",
+  "field.value_field": "값 필드",
+  "field.datasource": "데이터 소스"
+}

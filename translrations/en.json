@@ -1,0 +1,11 @@
+{
+  "field.rule": "rule",
+  "field.status": "status",
+  "field.interval": "interval",
+  "field.endpoint": "endpoint",
+  "field.return_type": "return type",
+  "field.data_key": "data key",
+  "field.key_field": "key field",
+  "field.value_field": "value field",
+  "field.datasource": "datasource"
+}
