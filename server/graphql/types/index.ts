@@ -1,7 +1,23 @@
-import * as Publisher from './publisher'
+// import * as CommonCode from './common-code'
+// import * as CommonCodeDetail from './common-code-detail'
 
-export const queries = [Publisher.Query]
+// export const queries = [
+//   CommonCode.Query,
+//   CommonCodeDetail.Query
+// ]
 
-export const mutations = [Publisher.Mutation]
+// export const mutations = [
+//   CommonCode.Mutation,
+//   CommonCodeDetail.Mutation
+// ]
 
-export const types = [...Publisher.Types]
+// export const types = [
+//   ...CommonCode.Types,
+//   ...CommonCodeDetail.Types
+// ]
+
+export const queries = []
+
+export const mutations = []
+
+export const types = []

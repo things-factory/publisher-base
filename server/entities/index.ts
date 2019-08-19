@@ -1,5 +1,5 @@
-import { Publisher } from './publisher'
+// import { Xxx } from './xxx'
 
-export const entities = [Publisher]
+export const entities = []
 
-export { Publisher }
+export {}

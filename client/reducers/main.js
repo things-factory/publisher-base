@@ -1,10 +1,10 @@
 import { UPDATE_PUBLISHER_BASE } from '../actions/main'
 
 const INITIAL_STATE = {
-  state_main: 'ABC'
+  publisherBase: 'ABC'
 }
 
-const main = (state = INITIAL_STATE, action) => {
+const publisherBase = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case UPDATE_PUBLISHER_BASE:
       return { ...state }
@@ -14,4 +14,4 @@ const main = (state = INITIAL_STATE, action) => {
   }
 }
 
-export default main
+export default publisherBase
