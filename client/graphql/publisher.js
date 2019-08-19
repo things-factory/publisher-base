@@ -13,10 +13,10 @@ export async function fetchPublisherList(listParam = {}) {
             status
             apiUrl
             creator {
-              id
+              name
             }
             updater {
-              id
+              name
             }
             createdAt
             updatedAt
@@ -125,17 +125,17 @@ export async function updatePublisher(publisher) {
   return response.data
 }
 
-export async function deletePublisher(id) {
+export async function deletePublishers(ids) {
   const response = await client.mutate({
     mutation: gql`
-      mutation($id: String!) {
-        deletePublisher(id: $id) {
+      mutation($ids: [String]!) {
+        deletePublishers(ids: $ids) {
           id
         }
       }
     `,
     variables: {
-      id
+      ids
     }
   })
 
