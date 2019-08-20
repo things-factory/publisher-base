@@ -41,7 +41,11 @@ export async function fetchPublisher(id) {
           intervalExpr
           status
           apiUrl
-          creator
+          creator {
+            name
+          } {
+            name
+          }
           updater
           createdAt
           updatedAt
@@ -77,7 +81,14 @@ export async function createPublisher(publisher) {
           description
           intervalExpr
           apiUrl
+          createdAt
           updatedAt
+          creator {
+            name
+          }
+          updater {
+            name
+          }
         }
       }
     `,
@@ -101,7 +112,6 @@ export async function updatePublisher(publisher) {
     }
     */
   var { id, name, description, intervalExpr, apiUrl } = publisher
-  model = JSON.stringify(model)
 
   const response = await client.mutate({
     mutation: gql`
@@ -113,6 +123,10 @@ export async function updatePublisher(publisher) {
           intervalExpr
           status
           apiUrl
+          updatedAt
+          updater {
+            name
+          }
         }
       }
     `,
