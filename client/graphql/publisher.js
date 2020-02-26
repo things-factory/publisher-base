@@ -1,4 +1,5 @@
-import { client, gqlBuilder } from '@things-factory/shell'
+import { client } from '@things-factory/shell'
+import { gqlBuilder } from '@things-factory/utils'
 import gql from 'graphql-tag'
 
 export async function fetchPublisherList(listParam = {}) {
